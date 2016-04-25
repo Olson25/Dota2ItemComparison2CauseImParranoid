@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Dota 2 Build Comparison</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Content/dota2-minimap-hero-sprites-master/assets/stylesheets/dota2minimapheroes.css" />
+    <link rel="icon"
+          type="image/png"
+          href="Content\Images\dota_2_hq_icon_by_benashvili-d50zkff.png">
+   @*<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">*@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Build Comparison", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Heroes", "Carousel", "HeroModels")</li>
+                    <li>@Html.ActionLink("Builds", "List", "BuildModels")</li>
+                    <li>@Html.ActionLink("Items", "Index", "ItemModels")</li>
+                    <li>@Html.ActionLink("SkillBuilds", "List", "SkillBuildModels")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="float:right; width:80%">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Dota 2 Build Comparison</p>
+        </footer>
+    </div>
+    <div style="float:left;width:20%; height:100%;">
+        <aside>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Build of the week</h3>
+                </div>
+                <div class="panel-body">
+                    <h2>@Html.ActionLink("Check out our Build of the week!", "Details", "BuildModels", new { id = 25 }, null)</h2>
+                    <img height="200px" width="200px"src="~/Content/Images/400px-Chaosknightdota2.jpg" />
+                    <p> For Chaos Knight</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

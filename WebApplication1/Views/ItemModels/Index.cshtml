@@ -1,0 +1,159 @@
+﻿@model IEnumerable<WebApplication1.Models.ItemModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.damage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strength)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.intelligence)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.agility)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.armor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hpRegen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.attackSpeed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.health)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bootSpeed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SpeedIncrease)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArmorReduction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.spellResistance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.percentEvasion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.percentManaRegen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.percentLifeSteal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.percentCleave)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.percentMoveSpeedIncrease)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dropsOnDeath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UAM)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.damage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strength)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.intelligence)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.agility)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.armor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hpRegen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.attackSpeed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.health)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bootSpeed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SpeedIncrease)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArmorReduction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.spellResistance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.percentEvasion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.percentManaRegen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.percentLifeSteal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.percentCleave)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.percentMoveSpeedIncrease)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dropsOnDeath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UAM)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

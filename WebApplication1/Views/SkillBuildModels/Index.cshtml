@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebApplication1.Models.SkillBuildModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill1Prio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill2Prio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Skill3Prio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UltiPrio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill1Prio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill2Prio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Skill3Prio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UltiPrio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

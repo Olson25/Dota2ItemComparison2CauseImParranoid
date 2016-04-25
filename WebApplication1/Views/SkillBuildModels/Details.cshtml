@@ -1,0 +1,49 @@
+﻿@model WebApplication1.Models.SkillBuildModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SkillBuildModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Skill1Prio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skill1Prio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skill2Prio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skill2Prio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Skill3Prio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Skill3Prio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UltiPrio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UltiPrio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

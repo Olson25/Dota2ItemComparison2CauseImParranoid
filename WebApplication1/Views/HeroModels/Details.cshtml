@@ -1,0 +1,128 @@
+﻿@model WebApplication1.Models.HeroModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Hero Stats</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.heroName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.heroName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.primaryAttribute)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.primaryAttribute)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ranged)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ranged)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BAT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BAT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseAgi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseAgi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseStr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseStr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseInt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseInt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgiGain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgiGain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StrGain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StrGain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IntGain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IntGain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseDamage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseDamage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseArmor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseArmor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.heroIcon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.heroIcon)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "List")
+</p>

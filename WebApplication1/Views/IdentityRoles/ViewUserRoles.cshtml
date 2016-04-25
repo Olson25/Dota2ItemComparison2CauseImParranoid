@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Roles by User";
+}
+
+<h2>Roles for User: @ViewBag.UserName</h2>
+
+@foreach (var role in ViewBag.RolesforThisUser)
+{
+    <p>role.Name</p>
+}
+

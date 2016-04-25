@@ -1,0 +1,194 @@
+﻿@model WebApplication1.Models.ItemModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ItemModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.damage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.damage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.strength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.strength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.intelligence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.intelligence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agility)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agility)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.armor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.armor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hpRegen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hpRegen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.attackSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.attackSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.health)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.health)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bootSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bootSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SpeedIncrease)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpeedIncrease)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArmorReduction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArmorReduction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.spellResistance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.spellResistance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.percentEvasion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.percentEvasion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.percentManaRegen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.percentManaRegen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.percentLifeSteal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.percentLifeSteal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.percentCleave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.percentCleave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.percentMoveSpeedIncrease)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.percentMoveSpeedIncrease)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dropsOnDeath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dropsOnDeath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UAM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UAM)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

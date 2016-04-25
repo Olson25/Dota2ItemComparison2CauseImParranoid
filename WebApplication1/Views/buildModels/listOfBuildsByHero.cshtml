@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WebApplication1.Models.buildModel>
+
+@{
+    ViewBag.Title = "listOfBuildsByHero";
+}
+
+<h2>Builds for @ViewBag.HeroName</h2>
+<table class="table">
+
+
+    <tr>
+        <td>
+            Item 1
+        </td>
+        <td>
+            Item 2
+        </td>
+        <td>
+            Item 3
+        </td>
+        <td>
+            Item 4
+        </td>
+        <td>
+            Item 5
+        </td>
+        <td>
+            Item 6
+        </td>
+        <td>
+            Level
+        </td>
+    </tr>
+    @foreach (var build in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => build.Item1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => build.Item2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => build.Item3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => build.Item4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => build.Item5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => build.Item6)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => build.level)
+            </td>
+            
+        </tr>
+    }
+
+</table>
+@Html.ActionLink("Add a build", "UserCreate", "buildModels", new {HeroID = ViewBag.HeroID}, null) <br/>
+@Html.ActionLink("Return To Hero List.", "List", "HeroModels")
